@@ -12,9 +12,13 @@ The processor design was **fully simulated, synthesized, and verified on real FP
 ---
 
 # Project Overview
-
-This project demonstrates the design and implementation of a **basic single-cycle RISC-V CPU architecture** using Verilog HDL.  
-The processor supports essential arithmetic and control instructions and successfully executes a **Fibonacci program** loaded into instruction memory.
+This project implements a **single-cycle 32-bit RISC-V processor** based on the RV32I base integer instruction set architecture. The design includes all major datapath and control components required for instruction fetch, decode, execution, memory access, and write-back operations.
+The processor was:
+- Designed using Verilog HDL
+- Simulated and verified using Icarus Verilog and GTKWave
+- Synthesized and deployed on the Basys3 FPGA board
+- Tested with assembly programs for functional verification
+- The processor supports essential arithmetic and control instructions and successfully executes a **Fibonacci program** loaded into instruction memory.
 
 The system was implemented and verified using **Xilinx Vivado** and tested on the **Basys3 FPGA development board**.
 
