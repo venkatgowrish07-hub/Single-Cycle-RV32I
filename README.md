@@ -23,18 +23,24 @@ The system was implemented and verified using **Xilinx Vivado** and tested on th
 # Key Features
 
 - 32-bit **RISC-V processor implementation**
+- Single-cycle processor capable of executing**R-Type, I-Type, S-Type, B-Type, U-Type, and J-Type** instructions.
 - Modular RTL design using **Verilog HDL**
-- Functional modules including:
+- RTL modules including:
   - Program Counter
-  - Instruction Memory
-  - Register File
-  - ALU
+  - Instruction Fetch
+  - Instruction Decode
   - Control Unit
-- Execution of **Fibonacci program**
+  - Register File
+  - Immediate Generator
+  - ALU control unit
+  - Memory Access
+  - Write Back
+  - PC Next
+  - Processor
 - **Clock divider** for Basys3 100 MHz system clock
+- Execution of **Fibonacci program**
 - Complete **simulation testbench**
 - **XDC constraint file** for Basys3 board
 - Successfully **synthesized and deployed on FPGA hardware**
-
 
 
