@@ -1,4 +1,7 @@
 A complete 32-bit RV32I RISC-V processor designed and implemented in Verilog HDL, featuring RTL architecture. The project includes functional simulation and verification using testbenches, successful deployment on the Basys3 FPGA board for real-time hardware validation through execution of program of Fibonacci sequence.
+
+---
+
 # RV32I Single Cycle Processor Implementation on Basys3 FPGA
 A complete **32-bit RV32I RISC-V processor designed and implemented in Verilog HDL** featuring modular RTL architecture, simulation verification, and FPGA deployment on the **Basys3 FPGA board**. 
 The processor supports core RV32I instructions and was successfully verified through execution of assembly programs on real FPGA hardware.
@@ -17,6 +20,7 @@ The processor was:
 - Simulated and verified using Icarus Verilog and GTKWave
 - Synthesized and deployed on the Basys3 FPGA board
 - Tested with assembly programs for functional verification
+- Integrated with seven-segment display hardware for real-time output monitoring
 - The processor supports essential arithmetic and control instructions and successfully executes a **Fibonacci program** loaded into instruction memory.
 
 The system was implemented and verified using **Xilinx Vivado** and tested on the **Basys3 FPGA development board**.
@@ -41,6 +45,9 @@ The system was implemented and verified using **Xilinx Vivado** and tested on th
   - PC Next
   - Processor
 - **Clock divider** for Basys3 100 MHz system clock
+- Binary-to-BCD conversion module
+- Multiplexed display controller
+- Seven-segment display interfacing
 - Execution of **Fibonacci program**
 - Complete **simulation testbench**
 - **XDC constraint file** for Basys3 board
