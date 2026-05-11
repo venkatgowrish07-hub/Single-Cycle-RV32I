@@ -9,7 +9,7 @@ wire [31:0]result;
 wire [3:0]thousands,hundreds,tens,ones;
 
 clkDivider cd(clkout,clk,reset);
-processor risc(result,regwrite,clkout,reset);
+processor risc(result,clkout,reset);
 bintobcd con(thousands,hundreds,tens,ones,result);
 displaymux dm(an,seg,thousands,hundreds,tens,ones,clk);
 endmodule
